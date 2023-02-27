@@ -16,7 +16,7 @@ class StudentController extends Controller
     {
         $student = Student::findOrFail($id);
 
-        $data = 'Name: ' . $student->name 
+        $data = '<h1 style="color: red">Name: ' . $student->name . '</h1>'
             . '<br/>Email: ' . $student->email 
             . '<br/>Student Code: ' . $student->student_code ;
 
